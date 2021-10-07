@@ -6,6 +6,8 @@ set -e
 # 문서(md)를 build하여 html로 만든다. 
 npm run docs:build
 
+# cp CNAME docs/.vuepress/dist
+
 # build가 output된 폴더로 이동한다. 
 cd docs/.vuepress/dist
 
@@ -21,6 +23,6 @@ git commit -m 'deploy'
 # git push -f https://github.com/<USERNAME>/<REPO>.git master:gh-pages
 
 # repository에 배포
-git push -f https://github.com/Zaesang/mylxpantos-admin-docs.git main:gh-pages
+git push -f https://github.com/Zaesang/mylxpantos-admin-docs.git master:gh-pages
 
 cd -
