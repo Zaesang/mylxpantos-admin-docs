@@ -4,7 +4,7 @@
 set -e
 
 # 문서(md)를 build하여 html로 만든다. 
-yarn docs:build
+npm run docs:build
 
 # build가 output된 폴더로 이동한다. 
 cd docs/.vuepress/dist
