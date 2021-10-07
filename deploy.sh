@@ -21,6 +21,6 @@ git commit -m 'deploy'
 # git push -f https://github.com/<USERNAME>/<REPO>.git master:gh-pages
 
 # repository에 배포
-git push -f https://github.com/Zaesang/mylxpantos-admin-docs.git main:gh-pages
+git push -f https://github.com/Zaesang/mylxpantos-admin-docs.git main:main
 
 cd -
