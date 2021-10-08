@@ -14,7 +14,7 @@ cd docs/.vuepress/dist
 # init + add + commit을 해준 다음
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy' 
 
 # https://<USERNAME>.github.io 에 배포하는 경우
 # git push -f https://github.com/<USERNAME>/<USERNAME>.github.io.git master
