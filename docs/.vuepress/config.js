@@ -37,11 +37,11 @@ module.exports = {
           },
           {
             text: 'Go to Admin site',
-            link: 'https://pantos-admin-pp.kontainers.net/'
+            link: 'https://pantos-admin-prod.kontainers.net/'
           },
           {
             text: 'Go to Customer site',
-            link: 'https://pantos-pp.kclient.io/'
+            link: 'https://www.mylxpantos.com/'
           }
         ],
       },
