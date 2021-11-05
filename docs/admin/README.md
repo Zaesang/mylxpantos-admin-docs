@@ -126,6 +126,12 @@ GSI의 Selling Tariff와는 다른 개념으로 특정 고객을 대상으로 �
 
 * 경로: Tariff > Selling Tariff > Sea Selling Tariff (SO00000028)
 
+::: warning
+* 운임항목(Freight code)들은 <u>동일한 Tariff No에 일괄로 입력</u>을 해야함
+
+  e.g. BUSAN-USLGB 구간에 OFT 운임 이외 부대비용(DMF, WFG..등)을 같이 포함하여 일괄 입력 필요  
+:::
+
 1. FAK/Contract 구분
 - FAK가격: FAK 체크박스 클릭 후 입력/승인
 - Contract가격: 기존과 동일하게 고객 Code선택 후 입력/승인
@@ -167,9 +173,9 @@ Contract Price에 입력한 Surcharge는 기본보다 우선 반영
 * 경로: FWD > Booking > Sea > GC Platform booking MGT(FW00000384)
 - 플랫폼에서 고객이 부킹 확정한 정보를 모니터링 하고 선사 부킹(E-booking) 또는 부킹 확정(S-booking)으로 전달하는 화면
 
-1. Upload Y/N: 최초 전송시 N으로 반영 되었다가 E-booking 또는 S-booking으로 전송시 N  Y로 자동 변경
-2. Customer Reference: 플랫폼에서 고객주문 단위로 자동생성 되는 Key값- 플랫폼의 Order와 Matching되는 값
-3. Exception: Booking Exception버튼을 클릭하면 N  Y로 자동변경 되어 별도 예외로 구분 관리
+1. Upload Y/N: 최초 전송시 N으로 반영 되었다가 E-booking 또는 S-booking으로 전송시 N에서 Y로 자동 변경
+2. Customer Reference: 플랫폼에서 고객주문 단위로 자동생성 되는 Key값(플랫폼의 Order와 Matching되는 값)
+3. Exception: Booking Exception버튼을 클릭하면 N에서 Y로 자동변경 되어 별도 예외로 구분 관리
 
 ### 선사 Booking 요청
 
@@ -192,5 +198,5 @@ Contract Price에 입력한 Surcharge는 기본보다 우선 반영
 - 플랫폼으로 부킹 확정정보를 전송하기 위한 기능
 
 1. Platform 조회조건: Use Y/N은 플랫폼 운영 고객만 별도 구분, Send Y/N은 플랫폼으로 부킹 확정정보 전송이 된 대상을 구분
-2. Status: 최초 N으로 구분되어 있으나, 일부 정보 수정 후 플랫폼 전송을 위해서는 F로 변경후 Save해야함
-3. Platform Send: 플랫폼으로 전소할 대상을 선택 후 전송함 (일괄전송시 Ctrl 누른 후 복수의 라인 선택)
+2. Platform Send: 플랫폼으로 전송할 대상을 Check box 클릭 하지 않고 마우스로 선택(노란색 표기)후 Send To Platform버튼을 눌러 전송함
+   (일괄전송시 Ctrl 누른 후 복수의 라인 선택)
